@@ -17,3 +17,8 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+  run-mac-command:
+    runs-on: macos-latest
+    steps:
+      - name: Using macos
+        run: pwd

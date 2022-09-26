@@ -19,6 +19,8 @@ jobs:
         shell: python
   run-mac-command:
     runs-on: macos-latest
+    needs:
+      - run-shell-command
     steps:
       - name: Using macos
         run: pwd

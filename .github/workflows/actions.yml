@@ -1,12 +1,12 @@
 name: Actions Workflow
 on:
-  schedule:
+  #schedule:
     # minutes, hours, day of month, month, day of week
     # * = any
     # run at 12 every day
     #- cron: "0 12 * * *"
     # run every 5 minutes
-    - cron: "0/5 * * * *"
+    #- cron: "0/5 * * * *"
   #push:
   pull_request:
     types: [closed, assigned, opened, reopened]

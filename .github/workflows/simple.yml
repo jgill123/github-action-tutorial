@@ -1,6 +1,6 @@
 name: Shell Commands
 
-on: [push]
+on: [pull_request]
 
 jobs:
   run-shell-command:
@@ -21,6 +21,7 @@ jobs:
     runs-on: macos-latest
     needs:
       - run-shell-command
+      # blah
     steps:
       - name: Using macos
         run: pwd
